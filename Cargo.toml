@@ -1,0 +1,11 @@
+[package]
+name = "erica"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+leptess = "0.14.0"
+screenshots = "0.5.2"
+reqwest = { version = "0.11.14", features = ["json"] }
+serde = { version = "1.0.152", features = ["derive"] }
+tokio = { version = "1.25.0", features = ["full"] }
