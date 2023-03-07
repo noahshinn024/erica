@@ -44,9 +44,9 @@ Based on the content on your screen, it seems like you are viewing a webpage or 
 ```
 >>> erica "Can you summarize the article that I'm reading?"
 ```
-<p>
+<pre style="background-color: #2f2f2f; padding: 5px;">
 It appears that you are reading a programming article about error handling in Rust. The article discusses when to use the `panic!` function and when to return a `Result` value. It suggests that `panic!` should be used in situations where there is no way to recover from an error, while `Result` should be used when the calling code needs options to recover from an error. The article also provides guidelines on when to use `panic!` in library code and when to use it in examples, prototype code, and tests. Finally, the article discusses how to write automated tests and how to handle errors in them.
-</p>
+</pre>
 
 ```
 >>> erica "Finish the code for the forward pass of the Disciminator that I'm writing."
