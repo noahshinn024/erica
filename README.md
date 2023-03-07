@@ -36,12 +36,12 @@ erica <a message to Erica>
 
 ## Examples
 
-<div style="background-color: #f2f2f2; padding: 10px;">
+<pre style="background-color: #f2f2f2; padding: 10px;">
   ```
   >>> erica "hey erica, what am I doing right now?"
   Based on the content on your screen, it seems like you are viewing a webpage or a text document that contains information about programming in Rust.
   ```
-</div>
+</pre>
 
 ```
 >>> erica "Can you summarize the article that I'm reading?"
