@@ -47,7 +47,6 @@ fn extract_text_from_image(img_path: &str) -> Result<String, Box<dyn std::error:
     let pix = leptonica::pix_read(Path::new(img_path)).unwrap();
     api.set_image(&pix);
     let text = api.get_utf8_text().unwrap();
-    println!("Text: {}", text);
     Ok(text)
 }
 
