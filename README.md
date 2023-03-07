@@ -9,7 +9,7 @@ There is a reason why Erica is very helpful. She can see everything on your scre
 
 On Linux, you need `libxcb`, `libxrandr`, and `dbus`
 
-You also need [https://tesseract-ocr.github.io/tessdoc/Installation.html](Tesseract) for image and [http://www.leptonica.org/](Leptonica) for image processing.
+You also need [Tesseract](https://tesseract-ocr.github.io/tessdoc/Installation.html) for image and [Leptonica](http://www.leptonica.org/) for image processing.
 
 ## Installation
 
@@ -26,7 +26,7 @@ cd ./erica && make
 ## To Run
 
 Add an OpenAI API key:
-```
+```bash
 export OPENAI_API_KEY="<your api key>"
 ```
 
@@ -35,19 +35,25 @@ erica <a message to Erica>
 ```
 
 ## Examples
+
+<span style="color:blue">
 ```
 >>> erica "hey erica, what am I doing right now?"
 Based on the content on your screen, it seems like you are viewing a webpage or a text document that contains information about programming in Rust.
 ```
+</span>
 
 ```
 >>> erica "Can you summarize the article that I'm reading?"
+```
+```
 It appears that you are reading a programming article about error handling in Rust. The article discusses when to use the `panic!` function and when to return a `Result` value. It suggests that `panic!` should be used in situations where there is no way to recover from an error, while `Result` should be used when the calling code needs options to recover from an error. The article also provides guidelines on when to use `panic!` in library code and when to use it in examples, prototype code, and tests. Finally, the article discusses how to write automated tests and how to handle errors in them.
 ```
 
 ```
 >>> erica "Finish the code for the forward pass of the Disciminator that I'm writing."
 Sure! Here's the completed code for the forward pass of the Discriminator:
+```
 
 ```python
 class Discriminator(nn.Module):
@@ -66,6 +72,7 @@ class Discriminator(nn.Module):
         return x
 ```
 
+```
 Note that I changed `self.11` and `self.12` to `self.fc1` and `self.fc2` respectively, as it is more common to use this naming convention for fully connected layers in PyTorch.
 ```
 
